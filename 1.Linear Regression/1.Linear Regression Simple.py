@@ -70,7 +70,7 @@ print (f"Mean Squared Error: {mse:.2f}")
 # Outputs the predicted and real values for the 2 test points as well as the MSE to 2 decimal places.
 
 
-# ---- PLOTTING ---- #
+# ---- PLOTTING RESULTS ---- #
 plt.scatter(x,y, color="steelblue",label="Real Data")
 # Plots the original data points on a graph as blue dots.
 
