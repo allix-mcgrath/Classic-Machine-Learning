@@ -37,6 +37,7 @@ data_df = pd.read_csv("MLR_Data.csv")
 # The DataFrame has 5 columns, Ambient Temperature, Vacuum, Ambient Pressure, Relative Humidity and 
 # Power Output. Each column has 9569 entries.
 
+
 # ---- DEFINING FEATURES AND LABELS ---- #
 x = data_df.drop(["PE"],axis=1).values
 # Creates a copy of the DataFrame called "x" with the PE column removed.
@@ -45,6 +46,7 @@ x = data_df.drop(["PE"],axis=1).values
 
 y = data_df["PE"].values
 # Creates a copy of the DataFrame containing the "PE" column only as the target variable.
+
 
 # ---- SPLITTING DATA ---- #
 x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.2, random_state=0)
@@ -83,6 +85,7 @@ comparison = pd.DataFrame({"Actual Value":y_test, "Predicted Value":y_prediction
 print("COMPARISON OF ACTUAL VS PREDICTED VALUES")
 print (comparison[0:30])
 # Prints out the first 30 rows of the new comparison DataFrame
+
 
 # ---- PLOTTING RESULTS ---- # 
 plt.figure(figsize=(15,10))

@@ -26,7 +26,7 @@ def train_test_split_manual(x, y, test_size=0.2, seed=0):
 x_train, x_test, y_train, y_test = train_test_split_manual(x, y, test_size=0.2, seed=0)
 
 
-# ---- MODEL TRAINING) ---- #
+# ---- MODEL TRAINING ---- #
 def add_intercept(X):
     return np.hstack([np.ones((X.shape[0], 1)), X])
 
